@@ -1,15 +1,15 @@
-package com.shreyas.book_My_Show.entity;
+package com.shreyas.book_My_Show.dto;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class User {
+@NoArgsConstructor
+@Builder
+public class ProfileDTO {
     private Long id;
     private String name;
     private String email;
