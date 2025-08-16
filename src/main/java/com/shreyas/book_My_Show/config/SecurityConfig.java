@@ -31,9 +31,9 @@ public class SecurityConfig {
                         // .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                         // .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//     @Bean
+//     public PasswordEncoder passwordEncoder() {
+//         return new BCryptPasswordEncoder();
+//     }
  }
 }
